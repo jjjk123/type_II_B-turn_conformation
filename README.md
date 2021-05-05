@@ -1,5 +1,7 @@
 # type_II_B-turn_conformation
 
+The program searches for type II' B-turn conformations in the sequence from a .pdb file.
+
 app.ipynb is the main program
 
 pdb_to_csv.R takes data from the .pdb file and puts it into a .csv file
