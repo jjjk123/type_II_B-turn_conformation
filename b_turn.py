@@ -1,10 +1,11 @@
-def find_b_turn(structure_name, file_name, chain, error):
-    from Bio.PDB.PDBParser import PDBParser
-    from Bio.PDB.vectors import calc_angle
-    from Bio.PDB.DSSP import DSSP
-    import pandas as pd
-    import numpy as np
+from Bio.PDB.PDBParser import PDBParser
+from Bio.PDB.vectors import calc_angle
+from Bio.PDB.DSSP import DSSP
+import pandas as pd
+import numpy as np
 
+
+def find_b_turn(structure_name, file_name, chain, error):
     parser = PDBParser()
 
     structure = parser.get_structure(structure_name, file_name)
